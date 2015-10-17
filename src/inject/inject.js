@@ -77,7 +77,12 @@ $(document).ready(function(){
 		var rightTable = $('#right-table');
 		if (!rightTable.length) return;
 		var index = $('#left-table .tlist').index(elem);
+		
 		if (index == -1) return;
+		if (index+1 > $('#right-table').find(".tlist").length) {
+			index = $('#right-table').find(".tlist").length - 1
+		}
+		
 		$('#right-table .tlist').eq(index).addClass('current');
 		elem.removeClass('current');
 		e.preventDefault()
