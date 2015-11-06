@@ -24,7 +24,8 @@
         "https://direct.yandex.ru/*"
       ],
       "js": [
-        "src/inject/inject.js"
+        "src/inject/inject.js",
+        "src/inject/direct.js"
       ]
     }
   ]
